@@ -2,7 +2,7 @@
   &__navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
@@ -12,16 +12,20 @@
     padding-top: 3rem;
 
     &--left {
+      padding-top: 2rem;
       .navigation__item {
         padding: 2rem;
       }
     }
 
     &--logo {
+      align-self: flex-start;
     }
 
     &--right {
       word-spacing: 2px;
+      align-self: flex-start;
+      padding-top: 2rem;
     }
 
     .navigation__links {
@@ -34,4 +38,45 @@
       color: $color-white;
     }
   }
+
+  .navigation-dropdown {
+    position: relative;
+    display: inline-block;
+    transition: all 2s;
+
+    &:hover .navigation-dropdown__content {
+      display: block;
+      transform: translateY(-3rem);
+    }
+
+    &__content {
+      display: none;
+      width: 22rem;
+      position: absolute;
+      left: 2rem;
+      background: $color-grey-light;
+      margin-top: 2rem;
+      top: 6rem;
+
+      a {
+        display: block;
+        color: $color-white;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 1.6rem;
+        padding: 1.3rem;
+
+        width: 100%;
+
+        &:hover {
+          background-color: rgba($color-black, 0.5);
+        }
+      }
+    }
+  }
 }
+
+// .navigation-dropdown:hover .navigation-dropdown__content {
+// }
