@@ -1,0 +1,68 @@
+.form-container {
+  display: flex;
+  justify-content: space-between;
+
+  background: white;
+  width: 50%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  //   padding: 2rem;
+
+  &__field {
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  &__input {
+    display: flex;
+    justify-content: space-between;
+
+    &--checkin {
+    }
+
+    &--rooms {
+    }
+  }
+
+  &__heading {
+    color: $color-grey-light-1;
+    font-family: "jost";
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    color: $color-black-2;
+    font-family: "jost";
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    &--link {
+      cursor: pointer;
+    }
+  }
+
+  &__button {
+    background: $color-black-2;
+    padding: 0rem 1.5rem;
+    height: 100%;
+    margin: 0;
+    border: none;
+    backface-visibility: hidden;
+    overflow: hidden;
+    &-text {
+      color: white;
+      font-size: 1.4rem;
+      font-family: "jost";
+      font-weight: 600;
+      padding: 2.5rem 3.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+    }
+  }
+}

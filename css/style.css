@@ -37,6 +37,53 @@ body {
   margin-left: 3rem;
   border-radius: 5px; }
 
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  width: 50%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none; }
+  .form-container__field {
+    width: 100%;
+    padding: 2.5rem 1.5rem; }
+  .form-container__input {
+    display: flex;
+    justify-content: space-between; }
+  .form-container__heading {
+    color: #7a7a7a;
+    font-family: "jost";
+    font-size: 1.4rem;
+    font-weight: 600; }
+  .form-container__text {
+    color: #2a2a2a;
+    font-family: "jost";
+    font-size: 1.4rem;
+    font-weight: 600; }
+    .form-container__text--link {
+      cursor: pointer; }
+  .form-container__button {
+    background: #2a2a2a;
+    padding: 0rem 1.5rem;
+    height: 100%;
+    margin: 0;
+    border: none;
+    backface-visibility: hidden;
+    overflow: hidden; }
+    .form-container__button-text {
+      color: white;
+      font-size: 1.4rem;
+      font-family: "jost";
+      font-weight: 600;
+      padding: 2.5rem 3.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      display: block; }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
