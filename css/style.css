@@ -17,6 +17,20 @@ body {
   line-height: 1.7;
   color: #5a5a5a; }
 
+.heading {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .heading__primary {
+    color: #fff;
+    font-size: 7.2rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    word-spacing: 5px; }
+
 .button__header {
   background-color: #b95c47;
   padding: 1rem 4rem;
