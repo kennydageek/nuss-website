@@ -1,3 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background: red;
-  height: 100vw; }
+  box-sizing: border-box; }
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #5a5a5a; }
+
+.button__header {
+  background-color: #b95c47;
+  padding: 1rem 4rem;
+  margin-left: 3rem;
+  border-radius: 5px; }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "jost", sans-serif;
+  margin: 0 10rem;
+  padding-top: 3rem; }
+  .header__navigation--left .navigation__item {
+    padding: 2rem; }
+  .header__navigation--right {
+    word-spacing: 2px; }
+  .header__navigation .navigation__links {
+    list-style: none;
+    display: flex; }
+  .header__navigation .navigation__item {
+    text-decoration: none;
+    color: #fff; }

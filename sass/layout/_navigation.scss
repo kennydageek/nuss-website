@@ -1,0 +1,37 @@
+.header {
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "jost", sans-serif;
+    margin: 0 10rem;
+    padding-top: 3rem;
+
+    &--left {
+      .navigation__item {
+        padding: 2rem;
+      }
+    }
+
+    &--logo {
+    }
+
+    &--right {
+      word-spacing: 2px;
+    }
+
+    .navigation__links {
+      list-style: none;
+      display: flex;
+    }
+
+    .navigation__item {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+}
