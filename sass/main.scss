@@ -7,8 +7,11 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/bg-half-trans";
 @import "components/button";
 @import "components/form";
 
 @import "layout/header";
 @import "layout/navigation";
+
+@import "pages/home";

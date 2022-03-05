@@ -9,7 +9,7 @@ body {
   width: 40%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 53%;
   transform: translate(-50%, -50%);
   // background: red;
 
@@ -20,5 +20,10 @@ body {
     text-align: center;
     line-height: 1;
     word-spacing: 5px;
+  }
+
+  &__secondary {
+    color: $color-black-3;
+    font-size: 4.2rem;
   }
 }

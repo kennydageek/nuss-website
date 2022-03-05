@@ -1,0 +1,113 @@
+.section-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 0 2rem 0;
+  position: relative;
+  margin-left: 4rem;
+
+  &__text {
+    background-color: $color-grey-light-2;
+    padding: 15rem 4rem;
+    width: 50rem;
+    flex-shrink: 1;
+  }
+
+  &__title {
+    font-family: jost;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: $color-grey-light;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    font-family: jost;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: $color-grey-light;
+    width: 75%;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    font-family: jost;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $color-black-3;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  &__video {
+    width: 31rem;
+    height: 38rem;
+    align-self: center;
+    flex: 0 1 auto;
+    margin-left: -10rem;
+    background-size: cover;
+    flex-shrink: 1;
+
+    &:hover .section-container__img-box {
+      cursor: pointer;
+    }
+  }
+
+  &__img-box {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        rgba($color-black, 0.1),
+        rgba($color-black, 0.2)
+      ),
+      url(../../img/history2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-size: cover;
+      animation: zoomin 1s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &__photo {
+    width: 36rem;
+    height: 48rem;
+
+    align-self: center;
+    flex-shrink: 1;
+    z-index: 4;
+    margin-left: 4rem;
+
+    &-box {
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+          rgba($color-black, 0.1),
+          rgba($color-black, 0.2)
+        ),
+        url(../../img/history1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__caption {
+    align-self: center;
+    margin-left: -13rem;
+
+    &-text {
+      font-family: jost;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      letter-spacing: 5px;
+      transform: rotate(90deg);
+      width: 30rem;
+    }
+  }
+}

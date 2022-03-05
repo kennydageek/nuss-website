@@ -1,10 +1,15 @@
 .header {
   height: 100vh;
   background-image: linear-gradient(
-      rgba($color-black, 0.4),
-      rgba($color-black, 0.5)
+      rgba($color-black, 0.1),
+      rgba($color-black, 0.2)
     ),
-    url(../img/hero.jpg);
+    url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  &:hover {
+    animation: zoomin 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
 }
