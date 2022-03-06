@@ -4,12 +4,13 @@
   padding: 2rem 0 2rem 0;
   position: relative;
   margin-left: 4rem;
+  overflow-x: hidden;
 
   &__text {
     background-color: $color-grey-light-2;
     padding: 15rem 4rem;
     width: 50rem;
-    flex-shrink: 1;
+    flex-shrink: 0;
   }
 
   &__title {
@@ -19,6 +20,11 @@
     letter-spacing: 3px;
     color: $color-grey-light;
     text-transform: uppercase;
+  }
+
+  &__heading {
+    width: 60%;
+    line-height: 1.4;
   }
 
   &__paragraph {
@@ -79,7 +85,7 @@
     height: 48rem;
 
     align-self: center;
-    flex-shrink: 1;
+    flex-shrink: 0;
     z-index: 4;
     margin-left: 4rem;
 
@@ -109,5 +115,75 @@
       transform: rotate(90deg);
       width: 30rem;
     }
+  }
+
+  &__stay-img {
+    width: 38rem;
+    height: 48rem;
+    align-self: center;
+    margin-left: -10rem;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 13rem;
+
+    &-box {
+      width: 100%;
+      height: 100%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &--family {
+        background-image: linear-gradient(
+            rgba($color-black, 0.4),
+            rgba($color-black, 0.5)
+          ),
+          url(../img/familysuite.jpg);
+      }
+
+      &--junior {
+        background-image: linear-gradient(
+            rgba($color-black, 0.4),
+            rgba($color-black, 0.5)
+          ),
+          url(../../img/juniorsuite.jpg);
+      }
+
+      &--deluxe {
+        background-image: linear-gradient(
+            rgba($color-black, 0.4),
+            rgba($color-black, 0.5)
+          ),
+          url(../../img/deluxe.jpg);
+
+        // background: red;
+      }
+
+      &:hover {
+        background-size: cover;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__staycaption {
+    position: absolute;
+    bottom: 3rem;
+    padding: 3rem;
+  }
+
+  &__slide-title {
+    color: $color-white;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  &__slide-text {
+    color: $color-white;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 600;
   }
 }
