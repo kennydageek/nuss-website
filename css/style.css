@@ -40,6 +40,9 @@ body {
     color: #1a1a1a;
     font-size: 4.2rem; }
 
+.u-margin-left {
+  margin-left: 10rem !important; }
+
 .section-container {
   display: flex;
   justify-content: flex-start;
@@ -47,6 +50,9 @@ body {
   position: relative;
   margin-left: 4rem;
   overflow-x: hidden; }
+  .section-container__text-center {
+    margin: 0 auto;
+    flex-shrink: 1; }
   .section-container__text {
     background-color: #f6f6fa;
     padding: 15rem 4rem;
@@ -160,6 +166,38 @@ body {
     font-size: 1.6rem;
     letter-spacing: 1px;
     font-weight: 600; }
+  .section-container__eatdrink-img {
+    width: 38rem;
+    height: 48rem;
+    align-self: center;
+    margin-left: -10rem;
+    flex-shrink: 0;
+    position: relative; }
+    .section-container__eatdrink-img-caption {
+      font-family: jost;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-align: center;
+      padding: 1rem 0;
+      text-transform: capitalize; }
+    .section-container__eatdrink-img--left {
+      left: 20rem;
+      flex-shrink: 1; }
+    .section-container__eatdrink-img--right {
+      right: 10rem;
+      flex-shrink: 1; }
+    .section-container__eatdrink-img-box {
+      width: 100%;
+      height: 100%;
+      background: blue;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+      .section-container__eatdrink-img-box--foodas {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../../img/freshfoodas.jpeg); }
+      .section-container__eatdrink-img-box--gardenrest {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../../img/gardenrest.jpeg); }
 
 .button__header {
   background-color: #b95c47;
@@ -321,3 +359,6 @@ body {
     justify-content: space-between; }
     .section-stay__btn-arrow:hover {
       cursor: pointer; }
+
+.section-eatdrink {
+  padding: 5rem 0 5rem 10rem; }

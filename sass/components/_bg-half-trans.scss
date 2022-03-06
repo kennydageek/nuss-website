@@ -6,6 +6,11 @@
   margin-left: 4rem;
   overflow-x: hidden;
 
+  &__text-center {
+    margin: 0 auto;
+    flex-shrink: 1;
+  }
+
   &__text {
     background-color: $color-grey-light-2;
     padding: 15rem 4rem;
@@ -185,5 +190,60 @@
     font-size: 1.6rem;
     letter-spacing: 1px;
     font-weight: 600;
+  }
+
+  &__eatdrink-img {
+    width: 38rem;
+    height: 48rem;
+    align-self: center;
+    margin-left: -10rem;
+    flex-shrink: 0;
+    position: relative;
+
+    &-caption {
+      font-family: jost;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-align: center;
+      padding: 1rem 0;
+      text-transform: capitalize;
+    }
+
+    &--left {
+      left: 20rem;
+      flex-shrink: 1;
+    }
+
+    &--right {
+      right: 10rem;
+      flex-shrink: 1;
+    }
+
+    &-box {
+      width: 100%;
+      height: 100%;
+      background: blue;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &--foodas {
+        background-image: linear-gradient(
+            rgba($color-black, 0.2),
+            rgba($color-black, 0.3)
+          ),
+          url(../../img/freshfoodas.jpeg);
+      }
+
+      &--gardenrest {
+        background-image: linear-gradient(
+            rgba($color-black, 0.2),
+            rgba($color-black, 0.3)
+          ),
+          url(../../img/gardenrest.jpeg);
+      }
+    }
   }
 }
