@@ -288,3 +288,55 @@
     text-align: center;
   }
 }
+
+.section-reviews {
+  &__logo {
+    text-align: center;
+    padding: 5rem 0 0 0;
+    position: relative;
+  }
+
+  &__heading {
+    text-align: center;
+    padding: 2.5rem 0;
+    text-transform: capitalize;
+    font-size: 4.2rem;
+    // font-family: 'Comorant';
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
+    position: relative;
+    margin-left: 4rem;
+  }
+}
+
+.section-container {
+  &__review {
+    margin: 2rem;
+  }
+
+  &__review-text {
+    font-size: 2.4rem;
+    color: $color-black-3;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__review-user {
+    font-family: jost;
+    font-size: 1.8rem;
+    color: $color-black-3;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  &__review-trademark {
+    font-family: jost;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: capitalize;
+  }
+}

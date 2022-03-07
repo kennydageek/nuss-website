@@ -232,6 +232,46 @@ body {
     padding: 0 3rem;
     text-align: center; }
 
+.section-reviews__logo {
+  text-align: center;
+  padding: 5rem 0 0 0;
+  position: relative; }
+
+.section-reviews__heading {
+  text-align: center;
+  padding: 2.5rem 0;
+  text-transform: capitalize;
+  font-size: 4.2rem; }
+
+.section-reviews-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0 2rem 0;
+  position: relative;
+  margin-left: 4rem; }
+
+.section-container__review {
+  margin: 2rem; }
+
+.section-container__review-text {
+  font-size: 2.4rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 1rem; }
+
+.section-container__review-user {
+  font-family: jost;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  text-transform: capitalize;
+  font-weight: 600; }
+
+.section-container__review-trademark {
+  font-family: jost;
+  font-size: 1.6rem;
+  color: #333;
+  text-transform: capitalize; }
+
 .button__header {
   background-color: #b95c47;
   padding: 1rem 4rem;
@@ -404,12 +444,11 @@ body {
   padding: 5rem 10rem; }
 
 .section-parallax {
-  padding: 5rem 0 5rem 10rem;
+  padding: 10rem 0 10rem 10rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/deluxe.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
 
 .section-reviews {
-  padding: 5rem 10rem;
-  background: red; }
+  padding: 5rem 10rem; }
