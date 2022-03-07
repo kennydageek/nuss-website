@@ -12,7 +12,7 @@
     display: flex;
     font-size: 3rem;
     width: 8rem;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     &:hover {
       cursor: pointer;
@@ -26,4 +26,21 @@
 
 .section-wellness {
   padding: 5rem 10rem;
+}
+
+.section-parallax {
+  padding: 5rem 0 5rem 10rem;
+  background-image: linear-gradient(
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.5)
+    ),
+    url(../../img/deluxe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-reviews {
+  padding: 5rem 10rem;
+  background: red;
 }
