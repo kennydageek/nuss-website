@@ -1,6 +1,9 @@
 .section-container {
   &-eat {
-    margin-top: -105rem;
+    @include respond(phone) {
+      margin-top: -108rem;
+      flex-wrap: wrap;
+    }
   }
 
   display: flex;
@@ -282,7 +285,7 @@
       flex-shrink: 1;
       top: -5rem;
 
-      @include respond(phone) {
+      @include respond(tab-land) {
         display: none;
       }
     }
@@ -290,6 +293,10 @@
     &--right {
       right: 10rem;
       flex-shrink: 1;
+
+      @include respond(tab-land) {
+        flex-shrink: 0;
+      }
 
       @include respond(phone) {
         width: 64rem;
@@ -392,6 +399,18 @@
 .section-container {
   &__review {
     margin: 2rem;
+
+    &--2 {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &--3 {
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
   }
 
   &__review-text {
