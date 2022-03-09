@@ -1,0 +1,144 @@
+.footer {
+  padding: 5rem 10rem;
+}
+
+.footer-container {
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  font-family: jost;
+  font-weight: 600;
+
+  &__address {
+  }
+}
+
+.footer-section-list {
+  width: 35.499rem;
+  min-height: 13.43rem;
+  padding: 2rem 0;
+
+  &__items {
+    width: 22.819rem;
+
+    padding: 0.5rem 0;
+  }
+}
+
+.footer-general {
+  &__heading {
+    font-family: "Cormorant Garamond";
+    font-size: 2.4rem;
+    color: $color-black-3;
+  }
+
+  &__links {
+    width: 24.75rem;
+    min-height: 14.93rem;
+    list-style: none;
+    margin-top: 2rem;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    padding-top: 1rem;
+    color: $color-black-3;
+    transition: color 0.1s;
+
+    &:hover {
+      color: $color-brown;
+    }
+  }
+}
+
+.footer-newsletter {
+  width: 43.09rem;
+  font-family: "Cormorant Garamond";
+  font-size: 2.8rem;
+  color: $color-black-3;
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__input {
+    padding: 2rem 6rem 2rem 3rem;
+    width: 47rem;
+    position: relative;
+    outline: 1px solid black;
+    transition: all 0.5s;
+    height: 6rem;
+    border: none;
+    border-radius: 2px;
+
+    &:focus {
+      outline: 1px solid $color-brown;
+      border-radius: 2px;
+    }
+
+    &::placeholder {
+      font-size: 1.6rem;
+      font-family: Jost;
+      font-weight: 500;
+      color: $color-black-3;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 1.8rem;
+    bottom: 1.8rem;
+    z-index: 2;
+  }
+
+  &__submit {
+    position: absolute;
+    top: 1.8rem;
+    left: 1.8rem;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 4rem 0;
+  border-top: 1px solid #eee;
+  font-family: jost;
+  font-size: 1.4rem;
+  color: $color-grey-light;
+
+  &__left {
+    display: flex;
+    width: 55.5rem;
+  }
+
+  &__text {
+    font-weight: 600;
+    margin-right: 2rem;
+  }
+
+  &__links {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $color-black-3;
+    font-weight: 600;
+    transition: 0.2s;
+
+    &:hover {
+      color: $color-brown;
+    }
+  }
+}
