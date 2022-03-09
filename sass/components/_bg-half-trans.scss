@@ -1,4 +1,8 @@
 .section-container {
+  &-eat {
+    margin-top: -105rem;
+  }
+
   display: flex;
   justify-content: flex-start;
   padding: 2rem 0 2rem 0;
@@ -19,6 +23,10 @@
   &__text-center {
     margin: 0 auto;
     flex-shrink: 1;
+
+    @include respond(phone) {
+      margin: 0 0;
+    }
   }
 
   &__text {
@@ -265,11 +273,21 @@
       left: 20rem;
       flex-shrink: 1;
       top: -5rem;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
 
     &--right {
       right: 10rem;
       flex-shrink: 1;
+
+      @include respond(phone) {
+        width: 64rem;
+        left: 5rem;
+        top: -5rem;
+      }
     }
 
     &-box {
