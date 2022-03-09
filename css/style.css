@@ -106,6 +106,9 @@ body {
     padding: 15rem 4rem;
     width: 50rem;
     flex-shrink: 0; }
+    @media (max-width: 37.5em) {
+      .section-container__text {
+        width: 59rem; } }
     .section-container__text-shrink {
       flex-shrink: 1; }
   .section-container__title {
@@ -169,8 +172,8 @@ body {
     margin-left: 4rem; }
     @media (max-width: 37.5em) {
       .section-container__photo {
-        margin-top: 2rem;
-        width: 52rem;
+        margin-top: -3rem;
+        width: 61rem;
         margin-left: -2rem; } }
     .section-container__photo-box {
       width: 100%;
@@ -208,10 +211,20 @@ body {
       background-position: center; }
       .section-container__stay-img-box--family {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/familysuite.jpg); }
+        @media (max-width: 37.5em) {
+          .section-container__stay-img-box--family {
+            width: 69rem;
+            margin-top: -5rem; } }
       .section-container__stay-img-box--junior {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/juniorsuite.jpg); }
+        @media (max-width: 37.5em) {
+          .section-container__stay-img-box--junior {
+            display: none; } }
       .section-container__stay-img-box--deluxe {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/deluxe.jpg); }
+        @media (max-width: 37.5em) {
+          .section-container__stay-img-box--deluxe {
+            display: none; } }
       .section-container__stay-img-box:hover {
         background-size: cover;
         cursor: pointer; }
@@ -219,6 +232,9 @@ body {
     position: absolute;
     bottom: 3rem;
     padding: 3rem; }
+    @media (max-width: 37.5em) {
+      .section-container__staycaption {
+        left: 10rem; } }
   .section-container__slide-title {
     color: #fff;
     font-size: 2.8rem;
@@ -764,6 +780,9 @@ label #cancel {
     display: flex;
     font-size: 3rem;
     width: 8rem; }
+    @media (max-width: 37.5em) {
+      .section-stay__btn-arrow {
+        display: none; } }
     .section-stay__btn-arrow:hover {
       cursor: pointer; }
 
