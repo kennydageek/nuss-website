@@ -42,6 +42,14 @@
     &-shrink {
       flex-shrink: 1;
     }
+
+    &-wellness {
+      @include respond(phone) {
+        flex-shrink: 1;
+        padding-left: 5rem;
+        width: 100rem;
+      }
+    }
   }
 
   &__title {
@@ -324,6 +332,13 @@
     flex-shrink: 1;
     position: relative;
     margin-right: 13rem;
+
+    @include respond(phone) {
+      flex-shrink: 0;
+      padding-left: 5rem;
+      width: 100rem;
+      margin-top: -5rem;
+    }
 
     &-box {
       width: 100%;
