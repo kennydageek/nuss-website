@@ -357,6 +357,11 @@
     width: 100%;
     padding: 0 3rem;
     text-align: center;
+
+    @include respond(phone) {
+      position: relative;
+      left: -6rem;
+    }
   }
 }
 
