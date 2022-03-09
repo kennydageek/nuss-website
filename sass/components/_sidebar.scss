@@ -1,0 +1,106 @@
+.sidebar {
+  position: fixed;
+  left: -250rem;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1000;
+  font-size: 2.4rem;
+  font-family: "Cormorant Garamond";
+  background: rgba($color-black, 0.5);
+  transition: all 0.5s ease;
+
+  &__footer {
+    font-size: 1.4rem;
+    font-family: jost;
+    font-weight: 600;
+    color: $color-black-3;
+    margin-left: 8rem;
+    position: absolute;
+    bottom: 9rem;
+  }
+
+  &--white {
+    margin-top: -10rem;
+    background: white;
+    width: 51.5rem;
+    height: 100vh;
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 8rem;
+    margin-top: 10rem;
+    padding-top: 10rem;
+  }
+
+  &__items {
+    padding-top: 2rem;
+
+    &:hover .sidebar__links {
+      color: $color-brown;
+    }
+  }
+
+  &__links {
+    color: $color-black-3;
+    text-decoration: none;
+    word-spacing: 0.3rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.5s ease;
+  }
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+
+  @include respond(big-desktop) {
+    display: none;
+  }
+
+  @include respond(tab-land) {
+    display: block;
+  }
+}
+
+label #btn {
+  left: 8rem;
+  top: 2rem;
+  font-size: 4rem;
+  color: $color-black-3;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: 8rem;
+  top: 2rem;
+  font-size: 4rem;
+  color: $color-black-3;
+  font-family: jost;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  display: none;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 25rem;
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+
+#check:checked ~ label #cancel {
+  display: block;
+}

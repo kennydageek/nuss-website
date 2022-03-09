@@ -12,6 +12,10 @@ body {
   left: 53%;
   transform: translate(-50%, -50%);
 
+  @include respond(tab-port) {
+    left: 45%;
+  }
+
   &__primary {
     color: $color-white;
     font-size: 7.2rem;

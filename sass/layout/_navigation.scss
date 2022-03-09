@@ -1,5 +1,18 @@
 .header {
   &__navigation {
+    &-sidebar {
+      font-size: 4rem;
+      margin-left: -1rem;
+
+      @include respond(big-desktop) {
+        display: none;
+      }
+
+      @include respond(tab-land) {
+        display: block;
+      }
+    }
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -16,10 +29,18 @@
       .navigation__item {
         padding: 2rem;
       }
+
+      @include respond(tab-land) {
+        display: none;
+      }
     }
 
     &--logo {
       align-self: flex-start;
+
+      @include respond(tab-land) {
+        margin-left: 10rem;
+      }
     }
 
     &--right {
@@ -34,6 +55,18 @@
     }
 
     .navigation__item {
+      &--phone {
+        @include respond(tab-land) {
+          display: none;
+        }
+      }
+
+      &--book {
+        @include respond(phone) {
+          display: none;
+        }
+      }
+
       text-decoration: none;
       color: $color-white;
     }
