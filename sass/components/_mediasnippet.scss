@@ -1,0 +1,28 @@
+@media (max-width: 68.37em) {
+  .navigation__item--phone {
+    display: none;
+  }
+}
+
+@media (max-width: 53em) {
+  .section-container__photo {
+    margin-left: -6rem;
+  }
+
+  .section-container__caption {
+    display: none;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .section-container__photo {
+    margin-left: 0rem;
+    width: 59rem;
+  }
+}
+
+@media (max-width: 84em) {
+  .section-container__eatdrink-img--left {
+    visibility: hidden;
+  }
+}

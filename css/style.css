@@ -118,11 +118,11 @@ body {
         width: 59rem; } }
     .section-container__text-shrink {
       flex-shrink: 1; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .section-container__text-wellness {
         flex-shrink: 1;
         padding-left: 5rem;
-        width: 100rem; } }
+        width: 200rem; } }
   .section-container__title {
     font-family: jost;
     font-size: 1.5rem;
@@ -284,7 +284,7 @@ body {
       flex-shrink: 1; }
       @media (max-width: 64em) {
         .section-container__eatdrink-img--right {
-          flex-shrink: 0; } }
+          flex-shrink: 1; } }
       @media (max-width: 37.5em) {
         .section-container__eatdrink-img--right {
           width: 64rem;
@@ -497,6 +497,9 @@ body {
   @media (max-width: 64em) {
     .form-container {
       visibility: hidden; } }
+  @media (max-width: 73.4em) {
+    .form-container {
+      visibility: hidden; } }
   .form-container__field {
     width: 100%;
     padding: 2.5rem 1.5rem; }
@@ -531,6 +534,25 @@ body {
       text-transform: uppercase;
       text-align: center;
       display: block; }
+
+@media (max-width: 68.37em) {
+  .navigation__item--phone {
+    display: none; } }
+
+@media (max-width: 53em) {
+  .section-container__photo {
+    margin-left: -6rem; }
+  .section-container__caption {
+    display: none; } }
+
+@media (max-width: 37.5em) {
+  .section-container__photo {
+    margin-left: 0rem;
+    width: 59rem; } }
+
+@media (max-width: 84em) {
+  .section-container__eatdrink-img--left {
+    visibility: hidden; } }
 
 .sidebar {
   position: fixed;
@@ -729,6 +751,9 @@ label #cancel {
   .header:hover {
     animation: zoomin 1s ease-in-out;
     animation-fill-mode: forwards; }
+    @media (max-width: 64em) {
+      .header:hover {
+        animation: none; } }
 
 .header__navigation {
   display: flex;
@@ -809,17 +834,23 @@ label #cancel {
 
 .section-history {
   padding: 5rem 10rem; }
+  @media (max-width: 56.25em) {
+    .section-history {
+      padding: 5rem 0; } }
 
 .section-stay {
   padding: 5rem 0rem 5rem 10rem;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .section-stay {
+      padding: 5rem 0 5rem 0; } }
   .section-stay__btn-arrow {
     position: absolute;
     right: 8rem;
     display: flex;
     font-size: 3rem;
     width: 8rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .section-stay__btn-arrow {
         display: none; } }
     .section-stay__btn-arrow:hover {
@@ -827,9 +858,15 @@ label #cancel {
 
 .section-eatdrink {
   padding: 5rem 0 5rem 10rem; }
+  @media (max-width: 56.25em) {
+    .section-eatdrink {
+      padding: 5rem 0 5rem 0; } }
 
 .section-wellness {
   padding: 5rem 10rem; }
+  @media (max-width: 56.25em) {
+    .section-wellness {
+      padding: 5rem 0; } }
 
 .section-parallax {
   padding: 10rem 0 10rem 10rem;
@@ -840,6 +877,9 @@ label #cancel {
 
 .section-reviews {
   padding: 5rem 10rem; }
+  @media (max-width: 56.25em) {
+    .section-reviews {
+      padding: 5rem 0; } }
 
 .section-instagram {
   position: relative;

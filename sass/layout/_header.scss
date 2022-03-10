@@ -11,5 +11,9 @@
   &:hover {
     animation: zoomin 1s ease-in-out;
     animation-fill-mode: forwards;
+
+    @include respond(tab-land) {
+      animation: none;
+    }
   }
 }

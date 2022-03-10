@@ -41,6 +41,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
   }
 
+  @if $breakpoint == laptop {
+    @media (max-width: 73.4em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tab-land {
     @media (max-width: 64em) {
       // 1024px

@@ -1,10 +1,18 @@
 .section-history {
   padding: 5rem 10rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-stay {
   padding: 5rem 0rem 5rem 10rem;
   position: relative;
+
+  @include respond(tab-port) {
+    padding: 5rem 0 5rem 0;
+  }
 
   &__btn-arrow {
     position: absolute;
@@ -13,10 +21,11 @@
     font-size: 3rem;
     width: 8rem;
 
-    @include respond(phone) {
+    // justify-content: space-between;
+
+    @include respond(tab-port) {
       display: none;
     }
-    // justify-content: space-between;
 
     &:hover {
       cursor: pointer;
@@ -26,10 +35,18 @@
 
 .section-eatdrink {
   padding: 5rem 0 5rem 10rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 0 5rem 0;
+  }
 }
 
 .section-wellness {
   padding: 5rem 10rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-parallax {
@@ -46,6 +63,10 @@
 
 .section-reviews {
   padding: 5rem 10rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-instagram {

@@ -14,6 +14,10 @@
     visibility: hidden;
   }
 
+  @include respond(laptop) {
+    visibility: hidden;
+  }
+
   &__field {
     width: 100%;
     padding: 2.5rem 1.5rem;
