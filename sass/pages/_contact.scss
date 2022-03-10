@@ -1,0 +1,49 @@
+.header {
+  height: 60vh;
+  background-image: linear-gradient(
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.5)
+    ),
+    url(../../img/contact-us/contact-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading__primary {
+  font-weight: 600;
+  font-size: 5.6rem;
+  position: relative;
+  top: -15rem;
+  text-transform: capitalize;
+}
+
+.site-content {
+  padding-top: 0;
+  background: red;
+  min-height: 40rem;
+}
+
+.container {
+  margin: 0 auto;
+  background: blue;
+}
+
+.container-desc {
+  text-align: center;
+  color: $color-black-3;
+  &__title {
+  }
+}
+
+.container-reserve {
+  &__heading {
+  }
+}
+
+.container-contact {
+  &__call {
+  }
+
+  &__email {
+  }
+}

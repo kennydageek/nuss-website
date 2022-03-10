@@ -1,0 +1,130 @@
+/*
+
+0- 400px:           small phone
+400 - 600px:        phone
+600 - 900px:        tablet portrait
+900 - 1024px:       tablet landscape
+1024- 1200px:       normal view
+
+
+$breakpoint argument choices:
+- phone-small
+- phone
+- tab-port
+- tab-land
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+*/
+.sidebar {
+  position: fixed;
+  left: -250rem;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1000;
+  font-size: 2.4rem;
+  font-family: "Cormorant Garamond";
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease; }
+  .sidebar__footer {
+    font-size: 1.4rem;
+    font-family: jost;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-left: 8rem;
+    position: absolute;
+    bottom: 9rem; }
+  .sidebar--white {
+    margin-top: -10rem;
+    background: white;
+    width: 51.5rem;
+    height: 100vh; }
+  .sidebar__list {
+    list-style: none;
+    margin-left: 8rem;
+    margin-top: 10rem;
+    padding-top: 10rem; }
+  .sidebar__items {
+    padding-top: 2rem; }
+    .sidebar__items:hover .sidebar__links {
+      color: #b95c47; }
+  .sidebar__links {
+    color: #1a1a1a;
+    text-decoration: none;
+    word-spacing: 0.3rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.5s ease; }
+
+#check {
+  display: none; }
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer; }
+  @media (min-width: 64em) {
+    label #btn,
+    label #cancel {
+      display: none; } }
+  @media (max-width: 64em) {
+    label #btn,
+    label #cancel {
+      display: block; } }
+
+label #btn {
+  left: 8rem;
+  top: 2rem;
+  font-size: 4rem;
+  color: #1a1a1a;
+  transition: all 0.5s;
+  opacity: 0; }
+
+label #cancel {
+  z-index: 1111;
+  left: 8rem;
+  top: 2rem;
+  font-size: 4rem;
+  color: #1a1a1a;
+  font-family: jost;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  display: none; }
+
+#check:checked ~ .sidebar {
+  left: 0; }
+
+#check:checked ~ label #btn {
+  left: 25rem;
+  opacity: 0;
+  pointer-events: none;
+  display: none; }
+
+#check:checked ~ label #cancel {
+  display: block; }
+
+.header {
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/contact-us/contact-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.heading__primary {
+  font-weight: 600;
+  font-size: 5.6rem;
+  position: relative;
+  top: -15rem;
+  text-transform: capitalize; }
+
+.site-content {
+  padding-top: 0;
+  background: red;
+  min-height: 40rem; }
+
+.container {
+  margin: 0 auto;
+  background: blue; }
+
+.container-desc {
+  text-align: center;
+  color: #1a1a1a; }

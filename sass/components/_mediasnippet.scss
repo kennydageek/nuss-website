@@ -26,3 +26,13 @@
     visibility: hidden;
   }
 }
+
+@media (max-width: 31em) {
+  .footer-newsletter__input {
+    width: 37rem !important;
+  }
+
+  .header__navigation {
+    margin: 0 3rem !important;
+  }
+}

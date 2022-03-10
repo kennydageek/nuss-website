@@ -57,7 +57,7 @@ body {
   width: 40%;
   position: absolute;
   top: 50%;
-  left: 53%;
+  left: 50%;
   transform: translate(-50%, -50%); }
   @media (max-width: 56.25em) {
     .heading {
@@ -83,6 +83,9 @@ body {
 
 .u-margin-left-big {
   margin-left: 23rem !important; }
+
+.flex {
+  display: flex; }
 
 .section-container {
   display: flex;
@@ -554,6 +557,12 @@ body {
   .section-container__eatdrink-img--left {
     visibility: hidden; } }
 
+@media (max-width: 31em) {
+  .footer-newsletter__input {
+    width: 37rem !important; }
+  .header__navigation {
+    margin: 0 3rem !important; } }
+
 .sidebar {
   position: fixed;
   left: -250rem;
@@ -748,12 +757,6 @@ label #cancel {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
-  .header:hover {
-    animation: zoomin 1s ease-in-out;
-    animation-fill-mode: forwards; }
-    @media (max-width: 64em) {
-      .header:hover {
-        animation: none; } }
 
 .header__navigation {
   display: flex;
