@@ -498,6 +498,18 @@ body {
   font-size: 1.5rem;
   letter-spacing: 2px; }
 
+.btn__underline {
+  padding: 1rem 0;
+  margin-left: 0;
+  text-decoration: none;
+  font-family: jost;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #000; }
+
 .form-container {
   display: flex;
   justify-content: space-between;
