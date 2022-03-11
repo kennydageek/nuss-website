@@ -16,6 +16,57 @@ $breakpoint argument choices:
 ORDER: Base + typography > general layout + grid > page layout > components
 
 */
+.button__header {
+  background-color: #b95c47;
+  padding: 1rem 4rem;
+  margin-left: 3rem;
+  border-radius: 5px; }
+
+.btn__primary {
+  border: 1px solid #1a1a1a;
+  border-radius: 3px;
+  padding: 1rem 3.5rem;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+  color: #1a1a1a;
+  text-transform: uppercase; }
+  .btn__primary:hover,
+  .btn__primary .btn__primary:focus {
+    color: #fff;
+    border-color: #b95c47; }
+  .btn__primary:hover::before,
+  .btn__primary .btn__primary:focus::before {
+    transform: scaleY(1); }
+  .btn__primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #b95c47;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 0.5s ease-in-out; }
+  .btn__primary--white {
+    border: 1px solid #fff;
+    color: white; }
+    .btn__primary--white:hover {
+      border-color: #fff; }
+
+.btn__secondary {
+  padding: 1rem 2.8rem;
+  margin-left: 0;
+  text-decoration: none;
+  font-family: jost;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 2px; }
+
 .sidebar {
   position: fixed;
   left: -250rem;
@@ -118,13 +169,74 @@ label #cancel {
 
 .site-content {
   padding-top: 0;
-  background: red;
   min-height: 40rem; }
 
 .container {
   margin: 0 auto;
-  background: blue; }
+  padding: 6rem 10rem; }
 
 .container-desc {
   text-align: center;
-  color: #1a1a1a; }
+  color: #1a1a1a;
+  padding: 0 0 10rem 0; }
+  .container-desc__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    width: 65rem;
+    margin: 0 auto;
+    padding-bottom: 4.5rem; }
+  .container-desc .container-reserve__heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+    padding-bottom: 2rem; }
+  .container-desc .container-contact {
+    font-family: jost;
+    font-size: 1.8rem;
+    color: #5a5a5a;
+    font-weight: 600; }
+
+.contact {
+  padding: 0 10rem; }
+
+.contact-image {
+  width: 74rem;
+  height: 80rem;
+  background-image: url(../../img/contact-us/form-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.contact-form {
+  padding: 4.5rem 6rem 4.5rem 9rem; }
+
+.form__heading {
+  font-size: 4.2rem;
+  color: #1a1a1a;
+  font-weight: 600; }
+
+.form__description {
+  font-size: 18px;
+  font-family: jost;
+  color: #1a1a1a;
+  font-weight: 500;
+  padding-bottom: 4rem; }
+
+.contact-inputs > * {
+  display: block;
+  width: 45rem;
+  border: 0;
+  border-bottom: 1px solid #000;
+  padding: 0.5rem 0 6rem 0;
+  transition: all 0.3s;
+  text-overflow: clip;
+  margin-bottom: 4rem; }
+  .contact-inputs > *:focus {
+    outline: none;
+    border-bottom: 1px solid #b95c47; }
+  .contact-inputs > *::placeholder {
+    font-size: 2rem;
+    font-family: jost;
+    color: #5a5a5a;
+    font-weight: 500; }
+
+.contact-inputs__message {
+  padding-bottom: 15rem; }

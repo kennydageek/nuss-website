@@ -487,6 +487,17 @@ body {
     .btn__primary--white:hover {
       border-color: #fff; }
 
+.btn__secondary {
+  padding: 1rem 2.8rem;
+  margin-left: 0;
+  text-decoration: none;
+  font-family: jost;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 2px; }
+
 .form-container {
   display: flex;
   justify-content: space-between;

@@ -59,3 +59,15 @@
 // .btn__primaryfocus::before {
 //   transform: scaleX(1);
 // }
+
+.btn__secondary {
+  padding: 1rem 2.8rem;
+  margin-left: 0;
+  text-decoration: none;
+  font-family: jost;
+  text-transform: uppercase;
+  color: $color-white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
