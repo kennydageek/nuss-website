@@ -1,6 +1,10 @@
 .container {
   margin: 0 auto;
   padding: 6rem 10rem;
+
+  @include respond(tab-port) {
+    padding: 6rem 0rem;
+  }
 }
 
 .container-desc {
@@ -40,6 +44,13 @@
 
 .contact {
   padding: 0 10rem;
+  @include respond(laptop) {
+    flex-wrap: wrap;
+  }
+
+  @include respond(phone) {
+    padding: 0 0rem;
+  }
 }
 
 .contact-image {
@@ -48,16 +59,34 @@
   background-image: url(../../img/contact-us/form-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include respond(tab-port) {
+    // flex-shrink: 1;
+    margin: 0 auto;
+  }
 }
 
 .location {
   margin-top: 4.5rem;
   padding: 3rem 10rem;
 
+  @include respond(laptop) {
+    flex-wrap: wrap;
+  }
+
+  @include respond(phone) {
+    padding: 0 0rem;
+  }
+
   &__heading {
     font-size: 4.2rem;
     color: $color-black-3;
     font-weight: 600;
+
+    @include respond(laptop) {
+      flex-wrap: wrap;
+      margin-top: 3rem;
+    }
   }
 
   &__text {
@@ -73,6 +102,11 @@
 .location-imgbox {
   width: 52rem;
   height: 50rem;
+
+  @include respond(laptop) {
+    width: 74rem;
+    height: 80rem;
+  }
 }
 
 .location-img {
@@ -93,6 +127,10 @@
   justify-content: space-between;
   padding: 3rem 20rem;
   background-color: $color-grey-light-2;
+
+  @include respond(phone) {
+    padding: 3rem 10rem;
+  }
 
   &__title {
     font-size: 2.8rem;

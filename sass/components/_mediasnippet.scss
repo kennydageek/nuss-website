@@ -36,3 +36,25 @@
     margin: 0 3rem !important;
   }
 }
+
+@media (max-width: 1139px) {
+  .faqs {
+    flex-wrap: wrap;
+  }
+
+  .faq-link {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-desc__title {
+    width: 40rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .faqs__text {
+    width: 40rem !important;
+  }
+}

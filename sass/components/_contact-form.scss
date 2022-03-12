@@ -1,5 +1,9 @@
 .contact-form {
   padding: 4.5rem 6rem 4.5rem 9rem;
+
+  @include respond(phone) {
+    padding: 4.5rem 0rem 4.5rem 9rem;
+  }
 }
 
 .form__heading {

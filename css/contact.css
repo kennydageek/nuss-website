@@ -81,6 +81,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .contact-form {
   padding: 4.5rem 6rem 4.5rem 9rem; }
+  @media (max-width: 37.5em) {
+    .contact-form {
+      padding: 4.5rem 0rem 4.5rem 9rem; } }
 
 .form__heading {
   font-size: 4.2rem;
@@ -222,6 +225,9 @@ label #cancel {
 .container {
   margin: 0 auto;
   padding: 6rem 10rem; }
+  @media (max-width: 56.25em) {
+    .container {
+      padding: 6rem 0rem; } }
 
 .container-desc {
   text-align: center;
@@ -245,6 +251,12 @@ label #cancel {
 
 .contact {
   padding: 0 10rem; }
+  @media (max-width: 73.4em) {
+    .contact {
+      flex-wrap: wrap; } }
+  @media (max-width: 37.5em) {
+    .contact {
+      padding: 0 0rem; } }
 
 .contact-image {
   width: 74rem;
@@ -252,14 +264,27 @@ label #cancel {
   background-image: url(../../img/contact-us/form-image.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
+  @media (max-width: 56.25em) {
+    .contact-image {
+      margin: 0 auto; } }
 
 .location {
   margin-top: 4.5rem;
   padding: 3rem 10rem; }
+  @media (max-width: 73.4em) {
+    .location {
+      flex-wrap: wrap; } }
+  @media (max-width: 37.5em) {
+    .location {
+      padding: 0 0rem; } }
   .location__heading {
     font-size: 4.2rem;
     color: #1a1a1a;
     font-weight: 600; }
+    @media (max-width: 73.4em) {
+      .location__heading {
+        flex-wrap: wrap;
+        margin-top: 3rem; } }
   .location__text {
     font-size: 18px;
     font-family: jost;
@@ -271,6 +296,10 @@ label #cancel {
 .location-imgbox {
   width: 52rem;
   height: 50rem; }
+  @media (max-width: 73.4em) {
+    .location-imgbox {
+      width: 74rem;
+      height: 80rem; } }
 
 .location-img {
   width: 100%;
@@ -288,6 +317,9 @@ label #cancel {
   justify-content: space-between;
   padding: 3rem 20rem;
   background-color: #f6f6fa; }
+  @media (max-width: 37.5em) {
+    .faqs {
+      padding: 3rem 10rem; } }
   .faqs__title {
     font-size: 2.8rem;
     color: #1a1a1a;
