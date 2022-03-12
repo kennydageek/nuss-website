@@ -1,0 +1,57 @@
+.contact-form {
+  padding: 4.5rem 6rem 4.5rem 9rem;
+}
+
+.form__heading {
+  font-size: 4.2rem;
+  color: $color-black-3;
+  font-weight: 600;
+}
+
+.form__description {
+  font-size: 18px;
+  font-family: jost;
+  color: $color-black-3;
+  font-weight: 500;
+  padding-bottom: 4rem;
+}
+
+.contact-inputs {
+  & > * {
+    display: block;
+    width: 45rem;
+    border: 0;
+    border-bottom: 1px solid $color-black;
+    padding: 0.5rem 0 6rem 0;
+    transition: all 0.3s;
+    text-overflow: wrap;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $color-brown;
+    }
+
+    margin-bottom: 4rem;
+
+    &::placeholder {
+      font-size: 2rem;
+      font-family: jost;
+      color: $color-grey-light;
+      font-weight: 500;
+    }
+  }
+  &__name {
+  }
+
+  &__email {
+    // display: block;
+  }
+
+  &__subject {
+    // display: block;
+  }
+
+  &__message {
+    padding-bottom: 15rem;
+  }
+}
