@@ -658,10 +658,11 @@ label #cancel {
 
 label #btn {
   left: 8rem;
-  top: 2rem;
+  top: 3rem;
   font-size: 4rem;
   color: #1a1a1a;
   transition: all 0.5s;
+  z-index: 10000;
   opacity: 0; }
 
 label #cancel {
@@ -810,6 +811,9 @@ label #cancel {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
+  .header__navigation-sidebar {
+    position: relative;
+    left: -1rem; }
 
 .header__navigation {
   display: flex;

@@ -30,6 +30,10 @@
     transition: all 0.3s;
     text-overflow: wrap;
 
+    @include respond(phone) {
+      width: 35rem;
+    }
+
     &:focus {
       outline: none;
       border-bottom: 1px solid $color-brown;

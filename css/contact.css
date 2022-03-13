@@ -106,6 +106,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   transition: all 0.3s;
   text-overflow: wrap;
   margin-bottom: 4rem; }
+  @media (max-width: 37.5em) {
+    .contact-inputs > * {
+      width: 35rem; } }
   .contact-inputs > *:focus {
     outline: none;
     border-bottom: 1px solid #b95c47; }
@@ -176,10 +179,11 @@ label #cancel {
 
 label #btn {
   left: 8rem;
-  top: 2rem;
+  top: 3rem;
   font-size: 4rem;
   color: #1a1a1a;
   transition: all 0.5s;
+  z-index: 10000;
   opacity: 0; }
 
 label #cancel {

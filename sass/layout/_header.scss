@@ -7,4 +7,9 @@
     url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
+  &__navigation-sidebar {
+    position: relative;
+    left: -1rem;
+  }
 }
