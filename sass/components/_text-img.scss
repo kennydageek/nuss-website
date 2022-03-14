@@ -1,0 +1,49 @@
+.manager-address {
+  padding: 1.5rem 10rem;
+  margin: 0 auto;
+}
+
+.manager-content {
+  justify-content: space-between;
+}
+
+.manager-message {
+  width: 57rem;
+  align-self: center;
+
+  &__quote {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+  }
+
+  &__signature {
+    margin-bottom: 2rem;
+  }
+}
+
+.manager-name {
+  //   padding: 0rem rem;
+
+  &__name {
+    font-size: 1.6rem;
+    font-family: jost;
+    font-weight: 600;
+    color: $color-black;
+    // padding: 0 0;
+  }
+
+  &__position {
+    font-size: 1.6rem;
+    font-family: jost;
+    font-weight: 500;
+    color: $color-grey-light;
+    text-transform: capitalize;
+    // padding: 0 0;
+  }
+}
+
+.manager-imgbox {
+  width: 54rem;
+  height: 51rem;
+}

@@ -10,7 +10,7 @@
   .container-stats__asset {
     font-size: 1.8rem;
     font-family: jost;
-    color: #5a5a5a;
+    color: #595959;
     text-transform: uppercase;
     font-weight: 500; }
 
@@ -19,6 +19,40 @@
 
 .container-stats-staff {
   border-right: 2px solid #f6f6fa; }
+
+.manager-address {
+  padding: 1.5rem 10rem;
+  margin: 0 auto; }
+
+.manager-content {
+  justify-content: space-between; }
+
+.manager-message {
+  width: 57rem;
+  align-self: center; }
+  .manager-message__quote {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 4rem; }
+  .manager-message__signature {
+    margin-bottom: 2rem; }
+
+.manager-name__name {
+  font-size: 1.6rem;
+  font-family: jost;
+  font-weight: 600;
+  color: #000; }
+
+.manager-name__position {
+  font-size: 1.6rem;
+  font-family: jost;
+  font-weight: 500;
+  color: #595959;
+  text-transform: capitalize; }
+
+.manager-imgbox {
+  width: 54rem;
+  height: 51rem; }
 
 .header {
   height: 60vh;
