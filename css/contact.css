@@ -125,12 +125,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: fixed;
   left: -250rem;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   z-index: 1000;
   font-size: 2.4rem;
   font-family: "Cormorant Garamond";
   background: rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease; }
+  transition: all 1s ease; }
   .sidebar__footer {
     font-size: 1.4rem;
     font-family: jost;
@@ -213,7 +213,8 @@ label #cancel {
   height: 60vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/contact-us/contact-hero.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .heading__primary {
   font-weight: 600;
@@ -243,6 +244,9 @@ label #cancel {
     width: 65rem;
     margin: 0 auto;
     padding-bottom: 4.5rem; }
+    .container-desc__title--big {
+      font-size: 2.8rem;
+      font-weight: 600; }
   .container-desc .container-reserve__heading {
     font-size: 2.8rem;
     font-weight: 600;

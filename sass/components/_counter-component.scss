@@ -1,0 +1,35 @@
+.container-stats {
+  justify-content: center;
+
+  &-room,
+  &-staff,
+  &-location {
+    padding: 1rem 10rem;
+  }
+
+  &__number {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 2rem;
+  }
+
+  &__asset {
+    font-size: 1.8rem;
+    font-family: jost;
+    color: $color-grey-light;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+
+.container-stats-room {
+  border-right: 2px solid $color-grey-light-2;
+}
+
+.container-stats-staff {
+  border-right: 2px solid $color-grey-light-2;
+}
+
+.container-stats-location {
+}

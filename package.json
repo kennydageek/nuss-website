@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "compile:contact": "node-sass sass/main-contact.scss css/contact.css -w"
+    "compile:contact": "node-sass sass/main-contact.scss css/contact.css -w",
+    "compile:about": "node-sass sass/main-about.scss css/about.css -w"
   },
   "author": "Kehinde Ajibade",
   "license": "ISC",

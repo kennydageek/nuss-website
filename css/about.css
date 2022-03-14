@@ -1,0 +1,42 @@
+.container-stats {
+  justify-content: center; }
+  .container-stats-room, .container-stats-staff, .container-stats-location {
+    padding: 1rem 10rem; }
+  .container-stats__number {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 2rem; }
+  .container-stats__asset {
+    font-size: 1.8rem;
+    font-family: jost;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    font-weight: 500; }
+
+.container-stats-room {
+  border-right: 2px solid #f6f6fa; }
+
+.container-stats-staff {
+  border-right: 2px solid #f6f6fa; }
+
+.header {
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/contact-us/contact-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.heading__primary {
+  font-weight: 600;
+  font-size: 5.6rem;
+  position: relative;
+  top: -15rem;
+  text-transform: capitalize; }
+
+.site-content {
+  padding-top: 0;
+  min-height: 40rem; }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/about-us/about-hero.jpg); }

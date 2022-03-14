@@ -58,3 +58,9 @@
     width: 40rem !important;
   }
 }
+
+@media (max-width: 496px) {
+  label #btn {
+    left: 1rem !important;
+  }
+}
