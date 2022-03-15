@@ -50,6 +50,17 @@
   letter-spacing: 1px;
   padding: 1.5rem 3rem; }
 
+.brands {
+  background: #f6f6fa;
+  padding: 5rem 0;
+  justify-content: center; }
+
+.brand-imgbox {
+  margin: 0 2.6rem; }
+
+.brand__photo {
+  display: block; }
+
 .container-stats {
   justify-content: center; }
   .container-stats-room, .container-stats-staff, .container-stats-location {

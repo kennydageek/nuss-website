@@ -5,6 +5,10 @@
     background-color: $color-black-3;
     color: white;
     margin-top: 5rem;
+
+    &--zeromag {
+      margin-top: 0;
+    }
   }
 }
 

@@ -699,6 +699,8 @@ label #cancel {
     background-color: #1a1a1a;
     color: white;
     margin-top: 5rem; }
+    .footer-black--zeromag {
+      margin-top: 0; }
 
 .footer-section {
   display: flex;
