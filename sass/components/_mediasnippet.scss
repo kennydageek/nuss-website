@@ -80,3 +80,18 @@
     width: 100% !important;
   }
 }
+
+@media (max-width: 768px) {
+  .about-story-container {
+    flex-wrap: wrap-reverse;
+    margin-left: 10rem;
+  }
+
+  .about-story__title {
+    margin-top: 2rem;
+  }
+
+  .about-story-imgbox {
+    margin-top: 4rem;
+  }
+}
