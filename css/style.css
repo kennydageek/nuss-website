@@ -30,7 +30,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -51,7 +51,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #5a5a5a; }
+  color: #595959; }
 
 .heading {
   width: 40%;
@@ -132,7 +132,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 3px;
-    color: #5a5a5a;
+    color: #595959;
     text-transform: uppercase; }
     .section-container__title--white {
       color: #fff; }
@@ -143,7 +143,7 @@ body {
     font-family: jost;
     font-weight: 500;
     font-size: 1.8rem;
-    color: #5a5a5a;
+    color: #595959;
     width: 75%;
     margin-bottom: 2rem; }
   .section-container__btn {
@@ -394,7 +394,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #5a5a5a; }
+    color: #595959; }
   .section-title__tag {
     font-size: 4.2rem;
     font-weight: 600;
@@ -786,7 +786,7 @@ label #cancel {
   border-top: 1px solid #eee;
   font-family: jost;
   font-size: 1.4rem;
-  color: #5a5a5a; }
+  color: #595959; }
   .footer-bottom__left {
     display: flex;
     width: 55.5rem; }
@@ -881,7 +881,7 @@ label #cancel {
     width: 22rem;
     position: absolute;
     left: 2rem;
-    background: #5a5a5a;
+    background: #595959;
     margin-top: 2rem;
     top: 6rem; }
     .header .navigation-dropdown__content a {
