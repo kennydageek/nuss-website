@@ -605,6 +605,16 @@ body {
   label #btn {
     left: 1rem !important; } }
 
+@media (max-width: 658px) {
+  .container-stats {
+    flex-direction: column; } }
+
+@media (max-width: 804px) {
+  .manager-content {
+    flex-wrap: wrap; }
+  .manager-message {
+    width: 100% !important; } }
+
 .sidebar {
   position: fixed;
   left: -250rem;
