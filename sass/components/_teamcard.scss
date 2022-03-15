@@ -1,0 +1,49 @@
+.team-section {
+  padding-bottom: 5rem;
+}
+
+.team__heading {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: $color-black-3;
+  letter-spacing: 1px;
+}
+
+.team__paragraph {
+  font-size: 2rem;
+  font-family: jost;
+  color: #7a7a7a;
+  text-align: center;
+  font-weight: 600;
+  word-spacing: 0.1rem;
+  padding-bottom: 5rem;
+}
+
+.team-card-container {
+  justify-content: center;
+}
+
+.team-cardbox {
+  width: 37rem;
+  height: 42rem;
+  padding: 2rem 1.8rem;
+}
+.team__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.team__name {
+  font-size: 2.4rem;
+  color: $color-black-3;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.team__position {
+  font-size: 1.8rem;
+  color: #5a5a5a;
+  font-weight: 600;
+}

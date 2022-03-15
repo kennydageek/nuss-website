@@ -115,7 +115,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .contact-inputs > *::placeholder {
     font-size: 2rem;
     font-family: jost;
-    color: #5a5a5a;
+    color: #595959;
     font-weight: 500; }
 
 .contact-inputs__message {
@@ -254,7 +254,7 @@ label #cancel {
   .container-desc .container-contact {
     font-family: jost;
     font-size: 1.8rem;
-    color: #5a5a5a;
+    color: #595959;
     font-weight: 600; }
 
 .contact {
