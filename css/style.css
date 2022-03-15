@@ -622,7 +622,16 @@ body {
   .about-story__title {
     margin-top: 2rem; }
   .about-story-imgbox {
-    margin-top: 4rem; } }
+    margin-top: 4rem; }
+  .team-card-container {
+    flex-direction: column; }
+  .team-cardbox {
+    margin-bottom: 10rem;
+    flex-shrink: 0; } }
+
+@media (max-width: 997px) {
+  .brands {
+    flex-wrap: wrap; } }
 
 .sidebar {
   position: fixed;
