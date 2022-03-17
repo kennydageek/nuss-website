@@ -84,3 +84,21 @@
   letter-spacing: 2px;
   border-bottom: 1px solid $color-black;
 }
+
+.btn__red {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: $color-brown;
+  border-radius: 3px;
+  text-decoration: none;
+  color: $color-white;
+  font-family: jost;
+  padding: 1.5rem 3rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-brown-dark;
+  }
+}

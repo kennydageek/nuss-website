@@ -79,6 +79,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
   letter-spacing: 2px;
   border-bottom: 1px solid #000; }
 
+.btn__red {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #b95c47;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-family: jost;
+  padding: 1.5rem 3rem;
+  transition: all 0.2s; }
+  .btn__red:hover {
+    background-color: #9e4531; }
+
 .contact-form {
   padding: 4.5rem 6rem 4.5rem 9rem; }
   @media (max-width: 37.5em) {
@@ -238,6 +253,8 @@ label #cancel {
   text-align: center;
   color: #1a1a1a;
   padding: 0 0 10rem 0; }
+  .container-desc--zeropad {
+    padding: 0; }
   .container-desc__title {
     font-size: 2.4rem;
     font-weight: 500;
@@ -278,7 +295,9 @@ label #cancel {
 
 .location {
   margin-top: 4.5rem;
-  padding: 3rem 10rem; }
+  justify-content: space-around; }
+  .location--zeromag {
+    margin-top: 0; }
   @media (max-width: 73.4em) {
     .location {
       flex-wrap: wrap; } }
@@ -293,6 +312,16 @@ label #cancel {
       .location__heading {
         flex-wrap: wrap;
         margin-top: 3rem; } }
+  .location__title {
+    font-size: 1.8rem;
+    font-family: jost;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #b95c47; }
+  .location__hotel {
+    font-size: 1.8rem;
+    font-family: jost;
+    font-weight: 600; }
   .location__text {
     font-size: 18px;
     font-family: jost;
@@ -300,10 +329,13 @@ label #cancel {
     font-weight: 500;
     padding-bottom: 4rem;
     width: 35rem; }
+    .location__text--xl-width {
+      width: 50rem; }
 
 .location-imgbox {
   width: 52rem;
-  height: 50rem; }
+  height: 50rem;
+  overflow-x: hidden; }
   @media (max-width: 73.4em) {
     .location-imgbox {
       width: 74rem;
@@ -315,11 +347,22 @@ label #cancel {
   background-image: url(../../img/contact-us/location-map.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  overflow-x: hidden; }
+  .location-img--cooking-class {
+    background-image: url(../../img/experiences/cooking-class.jpg); }
+  .location-img--yoga-class {
+    background-image: url(../../img/experiences/yoga-class-1.jpg); }
+  .location-img--cycle-class {
+    background-image: url(../../img/experiences/cycling-1.jpg); }
 
 .location-address {
-  padding: 0 6rem 4.5rem 9rem;
-  align-self: center; }
+  align-self: center;
+  margin-left: -10rem; }
+  @media (max-width: 73.4em) {
+    .location-address {
+      margin-left: 1rem;
+      padding: 0 0 4.5rem 0; } }
 
 .faqs {
   justify-content: space-between;
