@@ -1,3 +1,25 @@
-body {
-  background: red;
+.header {
+  height: 60vh;
+  background-image: linear-gradient(
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.5)
+    ),
+    url(../../img/experiences/experience-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading__primary {
+  font-weight: 600;
+  font-size: 5.6rem;
+  position: relative;
+  top: -15rem;
+  text-transform: capitalize;
+}
+
+.site-content {
+  padding-top: 0;
+  min-height: 40rem;
+  // margin-top: 5rem;
 }
