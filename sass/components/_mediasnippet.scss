@@ -83,8 +83,12 @@
 
 @media (max-width: 768px) {
   .about-story-container {
-    flex-wrap: wrap-reverse;
-    margin-left: 10rem;
+    flex-direction: column-reverse;
+    margin-left: 2rem;
+    align-items: center;
+    width: 90%;
+    flex-shrink: 0;
+    padding-left: 2rem;
   }
 
   .about-story__title {
@@ -97,6 +101,7 @@
 
   .team-card-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .team-cardbox {
