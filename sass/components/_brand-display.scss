@@ -2,6 +2,44 @@
   background: $color-grey-light-2;
   padding: 5rem 0;
   justify-content: center;
+  position: relative;
+
+  &--bgimg {
+    background-image: linear-gradient(
+        rgba($color-black, 0.4),
+        rgba($color-black, 0.5)
+      ),
+      url(../../img/Spa/bgimg.jpg);
+
+    height: 40rem;
+    margin-bottom: 5rem;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.brand-caption {
+  position: absolute;
+  bottom: 5rem;
+  color: white;
+  left: 4rem;
+}
+
+.brands__title {
+  font-family: jost;
+  font-size: 1.8rem;
+  font-weight: 600;
+  word-spacing: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+.brands__heading {
+  font-size: 4.2rem;
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .brand-imgbox {

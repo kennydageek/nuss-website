@@ -511,6 +511,21 @@ body {
   letter-spacing: 2px;
   border-bottom: 1px solid #000; }
 
+.btn__red {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #b95c47;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-family: jost;
+  padding: 1.5rem 3rem;
+  transition: all 0.2s; }
+  .btn__red:hover {
+    background-color: #9e4531; }
+
 .form-container {
   display: flex;
   justify-content: space-between;

@@ -72,7 +72,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .brands {
   background: #f6f6fa;
   padding: 5rem 0;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
+  .brands--bgimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/Spa/bgimg.jpg);
+    height: 40rem;
+    margin-bottom: 5rem;
+    background-position: center;
+    background-size: cover; }
+
+.brand-caption {
+  position: absolute;
+  bottom: 5rem;
+  color: white;
+  left: 4rem; }
+
+.brands__title {
+  font-family: jost;
+  font-size: 1.8rem;
+  font-weight: 600;
+  word-spacing: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 2rem; }
+
+.brands__heading {
+  font-size: 4.2rem;
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  text-transform: capitalize; }
 
 .brand-imgbox {
   margin: 0 2.6rem; }
@@ -84,6 +112,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   justify-content: center; }
   .container-stats-room, .container-stats-staff, .container-stats-location {
     padding: 1rem 10rem; }
+    .container-stats-room--zeropad, .container-stats-staff--zeropad, .container-stats-location--zeropad {
+      padding: 1rem 3rem; }
   .container-stats__number {
     font-size: 7rem;
     font-weight: 600;
@@ -94,6 +124,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
     font-family: jost;
     color: #595959;
     text-transform: uppercase;
+    font-weight: 600; }
+  .container-stats__heading {
+    font-size: 1.5rem;
+    color: #b95c47;
+    font-family: jost;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .container-stats__paragraph {
+    font-size: 2.4rem;
     font-weight: 600; }
 
 .container-stats-room {

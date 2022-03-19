@@ -255,6 +255,10 @@ label #cancel {
   padding: 0 0 10rem 0; }
   .container-desc--zeropad {
     padding: 0; }
+  .container-desc__heading {
+    font-size: 4.2rem;
+    text-transform: capitalize;
+    font-weight: 600; }
   .container-desc__title {
     font-size: 2.4rem;
     font-weight: 500;

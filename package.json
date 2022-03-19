@@ -7,7 +7,8 @@
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:contact": "node-sass sass/main-contact.scss css/contact.css -w",
     "compile:about": "node-sass sass/main-about.scss css/about.css -w",
-    "compile:experiences": "node-sass sass/main-experiences.scss css/experiences.css -w"
+    "compile:experiences": "node-sass sass/main-experiences.scss css/experiences.css -w",
+    "compile:spa": "node-sass sass/main-spa.scss css/spa.css -w"
   },
   "author": "Kehinde Ajibade",
   "license": "ISC",
