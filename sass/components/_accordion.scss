@@ -1,8 +1,10 @@
 .accordion {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+}
 
 .accordion input {
-  display: none; }
+  display: none;
+}
 
 .accordion label {
   display: block;
@@ -11,46 +13,54 @@
   text-transform: capitalize;
   position: relative;
   cursor: pointer;
-  border-bottom: 2px solid #f6f6fa;
+  border-bottom: 2px solid $color-grey-light-2;
   padding: 0.5rem 0;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 .label-icon {
   display: inline-block;
   position: absolute;
   right: 2rem;
   color: #8d8a8a;
-  font-weight: 800; }
+  font-weight: 800;
+}
 
 .accordion-content {
   color: #5a5a5a;
   font-family: Jost;
   font-size: 1.8rem;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 .checkbox + label + .accordion-content {
-  display: none; }
+  display: none;
+}
 
 .checkbox:checked + label + .accordion-content {
-  display: block; }
+  display: block;
+}
 
 .checkbox-1 + label + .accordion-content {
-  display: none; }
+  display: none;
+}
 
 .checkbox-1:checked + label + .accordion-content {
-  display: block; }
+  display: block;
+}
 
 .checkbox-2 + label + .accordion-content {
-  display: none; }
+  display: none;
+}
 
 .checkbox-2:checked + label + .accordion-content {
-  display: block; }
+  display: block;
+}
 
 .checkbox-3 + label + .accordion-content {
-  display: none; }
+  display: none;
+}
 
 .checkbox-3:checked + label + .accordion-content {
-  display: block; }
-
-.header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../img/Spa/spa-hero.jpg); }
+  display: block;
+}

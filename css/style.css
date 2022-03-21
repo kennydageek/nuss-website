@@ -88,6 +88,9 @@ body {
 .flex {
   display: flex; }
 
+.u-margin-top {
+  margin-top: 5rem !important; }
+
 .section-container {
   display: flex;
   justify-content: flex-start;
@@ -522,7 +525,8 @@ body {
   color: #fff;
   font-family: jost;
   padding: 1.5rem 3rem;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  display: inline-block; }
   .btn__red:hover {
     background-color: #9e4531; }
 

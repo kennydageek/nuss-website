@@ -168,6 +168,14 @@
     background-image: url(../../img/experiences/cycling-1.jpg);
   }
 
+  &--massage {
+    background-image: url(../../img/Spa/massage.jpeg);
+  }
+
+  &--meditation {
+    background-image: url(../../img/Spa/yoga-1-1.jpeg);
+  }
+
   // @include respond(laptop) {
   //   margin-left: 1rem;
   // }
@@ -176,6 +184,7 @@
 .location-address {
   align-self: center;
   margin-left: -10rem;
+  flex-basis: 50rem;
 
   @include respond(laptop) {
     margin-left: 1rem;

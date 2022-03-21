@@ -90,7 +90,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: #fff;
   font-family: jost;
   padding: 1.5rem 3rem;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  display: inline-block; }
   .btn__red:hover {
     background-color: #9e4531; }
 
@@ -359,10 +360,15 @@ label #cancel {
     background-image: url(../../img/experiences/yoga-class-1.jpg); }
   .location-img--cycle-class {
     background-image: url(../../img/experiences/cycling-1.jpg); }
+  .location-img--massage {
+    background-image: url(../../img/Spa/massage.jpeg); }
+  .location-img--meditation {
+    background-image: url(../../img/Spa/yoga-1-1.jpeg); }
 
 .location-address {
   align-self: center;
-  margin-left: -10rem; }
+  margin-left: -10rem;
+  flex-basis: 50rem; }
   @media (max-width: 73.4em) {
     .location-address {
       margin-left: 1rem;

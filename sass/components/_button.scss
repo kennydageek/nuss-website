@@ -97,6 +97,7 @@
   font-family: jost;
   padding: 1.5rem 3rem;
   transition: all 0.2s;
+  display: inline-block;
 
   &:hover {
     background-color: $color-brown-dark;
