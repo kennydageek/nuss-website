@@ -26,6 +26,7 @@
 
     &--left {
       padding-top: 2rem;
+      padding-bottom: 0;
       .navigation__item {
         padding: 2rem;
       }
@@ -55,6 +56,10 @@
     }
 
     .navigation__item {
+      transition: all 0.5s;
+      &:hover {
+        color: $color-brown;
+      }
       &--phone {
         @include respond(tab-land) {
           display: none;
